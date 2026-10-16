@@ -1,50 +1,44 @@
-
-<!-- parcial 1 programacion 3-->
-<!DOCTYPE html><!--e dice al navegador que el documento es html5-->
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial 1</title>
-        <!--vinculo  hoja de estilos externa -->
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Parcial 1 - División 132</h1><!--cabecera  titulo -->
+        <h1>Parcial 1 - División 132</h1>
     </header>
-<!-- contenido principal de pag-->
+
     <main>
-        <h2 id="titulo-users">Users</h2><!--id para agarrarlo desde js con click -->
+        <h2 id="titulo-users">Users</h2>
         <hr>
-       <!--separa filtros y botones del buscador -->
+
         <div class="controles">
             <div class="izquierda">
                 <div class="filtros">
-                    <!-- radios -->
-
                     <label><input type="radio" name="estado" checked> Active</label>
                     <label><input type="radio" name="estado"> Inactive</label>
                     <label><input type="radio" name="estado"> All</label>
                 </div>
-                <!-- botones -->
+
                 <div class="botones">
                     <button class="btn">CREATE</button>
-                    <button class="btn apagado">DESACTIVATE</button>
+                    <button class="btn apagado">DEACTIVATE</button>
                     <button class="btn apagado">RESET PASSWORD</button>
                 </div>
             </div>
-                <!-- barra de busqueda -->
+
             <input type="search" id="buscador" placeholder="Search Users">
         </div>
 
-        <div id="users-container"></div><!-- div vacio  se llena desde js con la tabla -->
+        <div id="users-container"></div>
     </main>
 
     <footer>
-        <!-- pie -->
-        <p> Lautaro Subeldia</p>
+        <p>Lautaro Subeldia</p>
     </footer>
 </body>
 </html>

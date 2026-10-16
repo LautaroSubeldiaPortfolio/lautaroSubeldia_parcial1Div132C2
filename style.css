@@ -1,54 +1,62 @@
+/*
+! varibalbels css con colores en un solo lugar
+*/
+
 :root {
     --primario: #483D8B;
     --gris-oscuro: #dddddd;
     --gris-claro: #fbfbfb;
-}
 
-body {
+}
+/**/
+
+ /* 
+    * fuente y espacio de pag
+ */
+body { 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px 40px;
 }
-
+/* centrar texto*/
 header, footer {
     text-align: center;
 }
-
-h2 {
+h2 { /* punto de clickeo*/
     font-size: 36px;
     margin-bottom: 10px;
     cursor: pointer;
 }
-
+/*saca borde por defecto*/
 hr {
     border: none;
     border-top: 1px solid var(--gris-oscuro);
 }
 
-.controles {
+.controles {/*manda filtros a izq y buscador a der*/
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
 }
 
-.filtros {
+.filtros {/**/
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
 }
-
+/*camvio color de inputs al color primario*/
 input[type="radio"],
 input[type="checkbox"] {
     accent-color: var(--primario);
 }
-
+/**/
 .botones {
     display: flex;
     gap: 5px;
 }
 
-.btn {
+.btn {/*borde y texto con color primario*/
     background-color: white;
     color: var(--primario);
     border: 1px solid var(--primario);
@@ -56,12 +64,12 @@ input[type="checkbox"] {
     font-weight: bold;
     cursor: pointer;
 }
-
+/*apagado*/
 .btn.apagado {
     opacity: 0.5;
     background-color: var(--gris-claro);
 }
-
+/**/
 #buscador {
     width: 40%;
     padding: 12px;
@@ -69,28 +77,34 @@ input[type="checkbox"] {
     font-style: italic;
 }
 
+/**/
 #users-container {
     margin-top: 30px;
 }
 
+/*jutna bordes de celdaas en una*/
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/**/
 th, td {
     border: 1px solid var(--gris-oscuro);
     padding: 10px;
     text-align: left;
 }
 
+/*pinta fias impares*/
 tbody tr:nth-child(odd) {
     background-color: var(--gris-claro);
 }
-
+/*username con color primario*/
 td.username {
     color: var(--primario);
 }
+
+/*IMG redonda*/
 
 td img {
     width: 40px;
@@ -98,6 +112,7 @@ td img {
     border-radius: 50%;
 }
 
-footer {
+
+footer {/**/
     margin-top: 40px;
 }
