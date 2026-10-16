@@ -1,0 +1,103 @@
+:root {
+    --primario: #483D8B;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--gris-oscuro);
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.filtros {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--primario);
+}
+
+.botones {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    background-color: white;
+    color: var(--primario);
+    border: 1px solid var(--primario);
+    padding: 12px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn.apagado {
+    opacity: 0.5;
+    background-color: var(--gris-claro);
+}
+
+#buscador {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid var(--gris-oscuro);
+    font-style: italic;
+}
+
+#users-container {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--gris-oscuro);
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+
+td.username {
+    color: var(--primario);
+}
+
+td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: 40px;
+}
